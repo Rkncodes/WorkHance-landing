@@ -609,3 +609,46 @@ html {
 section {
   min-height: auto;
 }
+
+/* HERO LOAD ANIMATION */
+.hero-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.hero-buttons {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.stats {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.hero-visual img {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeScale 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* KEYFRAMES */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
