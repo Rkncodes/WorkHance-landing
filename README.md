@@ -52,3 +52,17 @@ Key features include:
 - Responsive design using Flexbox and media queries for mobile compatibility
 - A contact form with validation to prevent empty or incorrect submissions
 - Basic interactivity such as hover effects to enhance user experience
+
+- SCREENSHOTS OF THE LANDING PAGE:
+## 📸 Screenshots
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/64ef7195-af9c-4b6e-9f04-f2092e2538c6" width="45%" />
+  <img src="https://github.com/user-attachments/assets/e04c5a4c-814d-4fa7-9d7a-20247235c0cd" width="45%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3b87974c-232d-4a75-9363-e5c55bfb15bf" width="45%" />
+  <img src="https://github.com/user-attachments/assets/d27032db-40ab-409e-b49f-030147d0779c" width="45%" />
+</p>
+
