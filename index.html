@@ -1,107 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work Hance</title>
-  <link rel="stylesheet" href="style.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-  <div class="container nav">
+  <header class="navbar">
     <div class="logo">
-  <img src="./logo.png" alt="Work Hance Logo" class="logo-img">
-  <span>Work Hance</span>
-</div>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</header>
-
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-box">
-      <h1>Empower Your Business<br>with Work Hance</h1>
-      <p>Empower your business with WorkHance, enhance innovation and matters that accelerate your business performance.</p>
-      <button class="btn">Get Started</button>
-    </div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services" id="services">
-  <div class="container">
-      <h2>Services</h2>
-      <div class="cards">
-
-        <div class="card">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
-            </svg>
-          </div>
-          <h3>Project Management</h3>
-          <p>Project management with empowers order out your project management.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
-          </div>
-          <h3>Team Collaboration</h3>
-          <p>Team communication, team collaboration and team acting business in workteam.</p>
-        </div>
-
-        <div class="card">
-          <div class="card-icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/>
-            </svg>
-          </div>
-          <h3>Data Analytics</h3>
-          <p>Data analytics and optins for analysis for analysts, smooting, and commumers.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <div class="container">
-    <h2>Contact Us</h2>
-
-    <form id="contactForm" class="form">
-      <div class="row">
-        <input type="text" id="name" placeholder="Name">
-        <input type="email" id="email" placeholder="Email">
-      </div>
-      <div class="textarea-row">
-        <textarea id="message" placeholder="Message"></textarea>
-        <button type="submit" class="btn send-btn">Send Message</button>
-      </div>
-    </form>
-
-    <div class="feedback-box">
-      <p class="feedback-title">Feedback</p>
-      <p id="formMessage" class="feedback-msg">Thank you for anything there, and which about your feedback.</p>
+      <img src="images/logo.png" alt="logo">
+      <span>Work Hance</span>
     </div>
 
-  </div>
-</section>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about-header">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<script src="script.js"></script>
+    <button class="nav-btn">Get Started</button>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <!-- LEFT -->
+    <div class="hero-text">
+      <span class="badge">Trusted Talent Partner</span>
+
+      <h1>
+        Streamlining Recruitment.<br>
+        <span class="green">Elevating Talent.</span>
+      </h1>
+
+      <p>
+        WorkHance helps businesses build high-performing teams by connecting them
+        with exceptional professionals through intelligent hiring solutions.
+      </p>
+
+      <div class="hero-buttons">
+        <button>Hire Talent</button>
+        <button class="secondary">Explore Careers</button>
+      </div>
+
+      <div class="stats">
+        <div>
+          <h3>200+</h3>
+          <p>Hiring Partners</p>
+        </div>
+        <div>
+          <h3>10K+</h3>
+          <p>Profiles Evaluated</p>
+        </div>
+        <div>
+          <h3>95%</h3>
+          <p>Success Rate</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT (IMAGE + FLOATING CARDS) -->
+    <div class="hero-visual">
+
+      <img
+        src="https://images.stockcake.com/public/3/b/d/3bd35085-7cde-4ba5-9fe3-ccac0545d099_large/office-meeting-discussion-stockcake.jpg"
+        alt="team">
+
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+
+    <div class="services-header">
+      <h2>Our Services</h2>
+      <p class="section-sub">
+        Comprehensive hiring solutions that streamline sourcing, screening, and onboarding.
+        We combine automation with human insight to help you hire faster and build stronger teams.
+      </p>
+    </div>
+
+    <div class="services">
+
+      <!-- CARD 1 -->
+      <div class="card hidden">
+        <img src="https://storyset.com/illustration/team-spirit/bro" alt="">
+        <div class="card-content">
+          <h3><span class="icon">👥</span> Talent Acquisition</h3>
+          <p>We identify, attract, and onboard top-tier professionals aligned with your business goals.</p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card hidden">
+        <img src="https://storyset.com/illustration/good-team/bro" alt="">
+        <div class="card-content">
+          <h3><span class="icon">⚙</span> RPO Solutions</h3>
+          <p>End-to-end recruitment management to improve hiring speed and reduce operational cost.</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card hidden">
+        <img src="https://storyset.com/illustration/creative-team/bro" alt="">
+        <div class="card-content">
+          <h3><span class="icon">🎯</span> Executive Search</h3>
+          <p>Strategic hiring solutions for leadership and senior-level roles.</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card hidden">
+        <img src="https://storyset.com/illustration/consulting/bro" alt="">
+        <div class="card-content">
+          <h3><span class="icon">💻</span> IT Staffing</h3>
+          <p>Access pre-vetted technical talent for short-term and long-term projects.</p>
+        </div>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="card hidden">
+        <img src="https://storyset.com/illustration/seminar/bro" alt="">
+        <div class="card-content">
+          <h3><span class="icon">✔</span> Candidate Screening</h3>
+          <p>Structured evaluation methods to ensure only the best-fit candidates move forward.</p>
+        </div>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="card hidden">
+        <img src="https://storyset.com/illustration/collaboration/bro" alt="">
+        <div class="card-content">
+          <h3><span class="icon">🚀</span> Career Support</h3>
+          <p>Helping candidates find meaningful opportunities aligned with their skills and ambitions.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about-header" class="about-header">
+
+    <h2>About Work Hance</h2>
+
+    <p>
+      WorkHance enables high-growth teams to hire faster with a blend of intelligent automation and expert-driven
+      evaluation.
+    </p>
+
+    <p>
+      We go beyond resumes—identifying talent that aligns with your business goals, culture, and long-term vision.
+    </p>
+
+  </section>
+
+  <section id="story">
+
+    <div class="about-container">
+
+      <!-- LEFT CONTENT -->
+      <div class="about-text">
+        <h2>Our Story</h2>
+
+        <p>
+          Founded in 2025, Work Hance emerged from a vision to revolutionize recruitment process outsourcing.
+          We recognized that finding the right talent requires more than just matching skills—it requires
+          understanding culture, aspirations, and potential.
+        </p>
+
+        <p>
+          Today, we serve over 200+ clients across 15 countries, having successfully placed more than
+          10,000 professionals in roles that drive business growth and career fulfillment.
+        </p>
+
+        <!-- STATS -->
+        <div class="about-stats">
+
+          <div>
+            <h3>200+</h3>
+            <p>Global Clients</p>
+          </div>
+
+          <div>
+            <h3>10K+</h3>
+            <p>Placements</p>
+          </div>
+
+          <div>
+            <h3>95%</h3>
+            <p>Client Retention</p>
+          </div>
+
+          <div>
+            <h3>72 Hours</h3>
+            <p>Avg Hiring Time</p>
+          </div>
+
+          <div>
+            <h3>98%</h3>
+            <p>Offer Acceptance</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="about-image">
+        <img
+          src="https://img.freepik.com/premium-vector/open-space-office-abstract-concept-vector-illustration-group-diverse-employees-working-sidebyside_107173-79809.jpg"
+          alt="about">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="contact-title">Contact Us</h2>
+    <p class="contact-sub">Ready to transform your hiring? Let’s talk.</p>
+
+    <div class="contact-wrapper">
+
+      <!-- LEFT: FORM -->
+      <div class="contact-card">
+        <h3>Send us a Message</h3>
+        <p class="small-text">We’ll get back within 24 hours</p>
+
+        <form id="contactForm">
+
+          <div class="form-row">
+            <input id="name" type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name">
+          </div>
+
+          <input id="email" type="email" placeholder="Email Address" required>
+          <input type="text" placeholder="Company Name">
+          <input type="text" placeholder="Phone">
+
+          <select>
+            <option>Select a service</option>
+            <option>Talent Acquisition</option>
+            <option>RPO</option>
+            <option>Executive Search</option>
+          </select>
+
+          <textarea id="message" placeholder="Tell us about your hiring needs..." required></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+
+        </form>
+      </div>
+
+      <!-- RIGHT: INFO -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p class="small-text">
+          Whether you're scaling your team or exploring opportunities, we’re here to help.
+        </p>
+
+        <div class="info-item">
+          📞 <div><strong>Phone</strong><br>9479727769</div>
+        </div>
+
+        <div class="info-item">
+          ✉️ <div><strong>Email</strong><br>info@workhance.in</div>
+        </div>
+
+        <div class="info-item">
+          ⏰ <div><strong>Business Hours</strong><br>Mon–Fri: 9AM – 6PM</div>
+        </div>
+
+        <div class="quick-links">
+          <p>Quick Links</p>
+          <a href="#services">View Services →</a>
+          <a href="#about-header">About →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
